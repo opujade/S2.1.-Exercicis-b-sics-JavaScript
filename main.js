@@ -1,5 +1,4 @@
 // Exercici 1.1. Arrow Functions
-
 // Exercici 1
 const add = (a, b) => a + b;
 
@@ -32,4 +31,7 @@ const message = () => {
         console.log('Missatge')
     }, 3000);
 }
-message();
+
+// Exercici 1.2. Operador ternari
+// Exercici 1
+const potConduir = (edat) => edat >= 18 ? 'Pots conduir' : 'No pots conduir';
