@@ -5,3 +5,16 @@ const add = (a, b) => a + b;
 
 // Exercici 2
 const randomNumber = () => parseInt(Math.random() * 101);
+
+// Exercici 3
+class Person {
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    greet = () => console.log(this.name);
+}
