@@ -18,3 +18,10 @@ class Person {
 
     greet = () => console.log(this.name);
 }
+
+// Exercici 4
+const printNumbers = (arrayNumeros) => {
+    for (let i = 0; i < arrayNumeros.length; i++) {
+        console.log(arrayNumeros[i]);
+    }
+}
