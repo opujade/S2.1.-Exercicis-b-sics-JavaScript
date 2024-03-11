@@ -25,3 +25,11 @@ const printNumbers = (arrayNumeros) => {
         console.log(arrayNumeros[i]);
     }
 }
+
+// Exercici 5
+const message = () => {
+    setTimeout(() => {
+        console.log('Missatge')
+    }, 3000);
+}
+message();
