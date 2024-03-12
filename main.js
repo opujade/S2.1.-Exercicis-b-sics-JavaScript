@@ -79,3 +79,9 @@ const processarElements = (array, processar) => {
 	}
 };
 const contadorProces = (num) => console.log(`Contador: ${num + 1}`);
+
+// Exercici 5
+const processarCadena = (cadena, mostrar) => {
+    mostrar(cadena.toUpperCase());
+}
+const mostrar = (item) => console.log(item);
