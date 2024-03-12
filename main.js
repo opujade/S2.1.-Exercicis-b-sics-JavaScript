@@ -235,7 +235,37 @@ const exercici165 = () => {
 // Exercici 6
 const exercici166 = () => {
 	const noms = ['Anna', 'Bernat', 'Clara'];
-    for(let nom of noms) {
-        console.log(noms.indexOf(nom) + ': ' + nom);
-    }
+	for (let nom of noms) {
+		console.log(noms.indexOf(nom) + ': ' + nom);
+	}
 };
+
+// Exercici 1.7: Promises & Async/Await
+// Exercici 1 i Exercici 2
+const exercici171 = () => {
+	let myPromise = new Promise((resolve) => {
+		setTimeout(() => {
+			resolve('Hola, món');
+		}, 2000);
+	})
+
+	myPromise.then((salutacio) => console.log(salutacio));
+}
+
+// Exercici 3
+const exercici172 = () => {
+	let myPromise2 = new Promise((resolve, reject) => {
+		let input = 'adeu'
+		setTimeout(() => {
+			if (input === 'Hola') {
+				resolve('Resolt');
+			} else {
+				reject(new Error('No resolt'));
+			}
+		}, 2000);
+	})
+	myPromise2.then(
+		(value) => console.log(value),
+		(error) => console.log(error),
+	);
+}
