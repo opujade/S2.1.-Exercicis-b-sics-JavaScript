@@ -61,14 +61,21 @@ const processar = (num, callbackFunction) => callbackFunction(num);
 const comprovar = (num) => `El numero és ${num}`;
 
 // Exercici 2
-const calculadora = (num1, num2, operador) =>
-	operador(num1, num2);
+const calculadora = (num1, num2, operador) => operador(num1, num2);
 const sumar = (num1, num2) => num1 + num2;
 
 // Exercici 3
 const esperarISaludar = (name, salutacio) => {
-    setTimeout(() => {
-        salutacio(name);
-    }, 2000);
-}
+	setTimeout(() => {
+		salutacio(name);
+	}, 2000);
+};
 const saludar = (name) => console.log(`Hola, ${name}!`);
+
+// Exercici 4
+const processarElements = (array, processar) => {
+	for (let i = 0; i < array.length; i++) {
+		processar(i);
+	}
+};
+const contadorProces = (num) => console.log(`Contador: ${num + 1}`);
