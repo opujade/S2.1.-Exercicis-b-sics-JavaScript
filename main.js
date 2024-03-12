@@ -151,5 +151,12 @@ const exercici146 = () => {
 const exercici151 = () => {
 	const array1 = [1, 2, 3, 4];
 	const array2 = array1.map((num) => num ** 2);
+	console.log(array2);
+};
+
+// Exercici 2
+const exercici152 = () => {
+	const array1 = [1, 2, 3, 4];
+    const array2 = array1.filter( (num) => num % 2 == 0);
     console.log(array2);
 };
