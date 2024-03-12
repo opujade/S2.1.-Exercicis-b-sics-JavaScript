@@ -82,6 +82,15 @@ const contadorProces = (num) => console.log(`Contador: ${num + 1}`);
 
 // Exercici 5
 const processarCadena = (cadena, mostrar) => {
-    mostrar(cadena.toUpperCase());
-}
+	mostrar(cadena.toUpperCase());
+};
 const mostrar = (item) => console.log(item);
+
+// Exercici 1.4: Rest & Spread operators
+// Exercici 1
+const exercici114 = () => {
+	const array1 = [1, 2, 3, 4];
+	const array2 = [5, 6, 7, 8];
+    const array3 = [...array1, ...array2]
+    return array3;
+};
