@@ -127,21 +127,29 @@ const exercici144 = () => {
 
 // Exercici 5
 const exercici145 = (a, b, c) => {
-	return `Element 1: ${a}, element 2: ${b}, element 3: ${c}.`
+	return `Element 1: ${a}, element 2: ${b}, element 3: ${c}.`;
 };
 const arrayExercici145 = [1, 2, 3];
 exercici145(...arrayExercici145);
 
 // Exercici 6
 const exercici146 = () => {
-    const obj1 = {
-        nom: 'Oriol',
-        cognom: 'Pujade'
-    }
-    const obj2 = {
-        edat: 27,
-        especialitat: 'JavaScript'
-    }
-    const obj3 = {...obj1, ...obj2};
-    console.log(obj3);
-}
+	const obj1 = {
+		nom: "Oriol",
+		cognom: "Pujade",
+	};
+	const obj2 = {
+		edat: 27,
+		especialitat: "JavaScript",
+	};
+	const obj3 = { ...obj1, ...obj2 };
+	console.log(obj3);
+};
+
+// Exercici 1.5: Array transformations
+// Exercici 1
+const exercici151 = () => {
+	const array1 = [1, 2, 3, 4];
+	const array2 = array1.map((num) => num ** 2);
+    console.log(array2);
+};
