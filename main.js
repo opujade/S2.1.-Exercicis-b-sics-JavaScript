@@ -242,30 +242,32 @@ const exercici166 = () => {
 
 // Exercici 1.7: Promises & Async/Await
 // Exercici 1 i Exercici 2
-const exercici171 = () => {
-	let myPromise = new Promise((resolve) => {
-		setTimeout(() => {
-			resolve('Hola, món');
-		}, 2000);
-	})
+let promise1 = new Promise((resolve) => {
+	setTimeout(() => {
+		resolve('Hola, món');
+	}, 2000);
+})
+promise1.then((salutacio) => console.log(salutacio));
 
-	myPromise.then((salutacio) => console.log(salutacio));
-}
 
 // Exercici 3
-const exercici172 = () => {
-	let myPromise2 = new Promise((resolve, reject) => {
-		let input = 'adeu'
-		setTimeout(() => {
-			if (input === 'Hola') {
-				resolve('Resolt');
-			} else {
-				reject(new Error('No resolt'));
-			}
-		}, 2000);
-	})
-	myPromise2.then(
-		(value) => console.log(value),
-		(error) => console.log(error),
-	);
+let promise2 = new Promise((resolve, reject) => {
+	let input = 'Hola'
+	setTimeout(() => {
+		if (input === 'Hola') {
+			resolve('Resolt');
+		} else {
+			reject(new Error('No resolt'));
+		}
+	}, 2000);
+})
+promise2.then(
+	(value) => console.log(value),
+	(error) => console.log(error),
+);
+
+// Exercici 4
+async function myFunction() {
+	console.log(await promise1);
 }
+myFunction();
