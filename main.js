@@ -131,3 +131,17 @@ const exercici145 = (a, b, c) => {
 };
 const arrayExercici145 = [1, 2, 3];
 exercici145(...arrayExercici145);
+
+// Exercici 6
+const exercici146 = () => {
+    const obj1 = {
+        nom: 'Oriol',
+        cognom: 'Pujade'
+    }
+    const obj2 = {
+        edat: 27,
+        especialitat: 'JavaScript'
+    }
+    const obj3 = {...obj1, ...obj2};
+    console.log(obj3);
+}
