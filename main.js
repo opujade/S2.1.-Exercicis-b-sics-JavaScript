@@ -199,3 +199,11 @@ const exercici161 = () => {
         console.log(nom);
     });
 }
+
+// Exercici 2
+const exercici162 = () => {
+    const noms = ['Anna', 'Bernat', 'Clara'];
+    for (let nom of noms) {
+        console.log(nom);
+    }
+}
