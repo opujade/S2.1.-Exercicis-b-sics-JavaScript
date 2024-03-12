@@ -167,3 +167,10 @@ const exercici153 = () => {
 	const primerMajor = array1.find((num) => num > 10);
 	console.log(primerMajor);
 };
+
+// Exercici 4
+const exercici154 = () => {
+	const array1 = [13, 7, 8, 21];
+    const result = array1.reduce((total, num) => total + num);
+    console.log(result);
+};
