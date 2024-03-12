@@ -28,21 +28,21 @@ const printNumbers = (arrayNumeros) => {
 // Exercici 5
 const message = () => {
 	setTimeout(() => {
-		console.log("Missatge");
+		console.log('Missatge');
 	}, 3000);
 };
 
 // Exercici 1.2. Operador ternari
 // Exercici 1
-const potConduir = (edat) => (edat >= 18 ? "Pots conduir" : "No pots conduir");
+const potConduir = (edat) => (edat >= 18 ? 'Pots conduir' : 'No pots conduir');
 
 // Exercici 2
 const mesGran = (num1, num2) =>
-	num1 > num2 ? "num1 és més gran" : "num2 és més gran";
+	num1 > num2 ? 'num1 és més gran' : 'num2 és més gran';
 
 // Exercici 3
 const exercici3 = (num) =>
-	num >= 0 ? (num == 0 ? "Es zero" : "Es positivo") : "Es negativo";
+	num >= 0 ? (num == 0 ? 'Es zero' : 'Es positivo') : 'Es negativo';
 
 const trobarMaxim = (a, b, c) => (a > b ? (a > c ? a : c) : b > c ? b : c);
 
@@ -107,8 +107,8 @@ const suma = (...numbers) => {
 // Exercici 3
 const exercici143 = () => {
 	const obj1 = {
-		nom: "Oriol",
-		cognom: "Pujade",
+		nom: 'Oriol',
+		cognom: 'Pujade',
 		edat: 27,
 		isObj1: true,
 	};
@@ -135,12 +135,12 @@ exercici145(...arrayExercici145);
 // Exercici 6
 const exercici146 = () => {
 	const obj1 = {
-		nom: "Oriol",
-		cognom: "Pujade",
+		nom: 'Oriol',
+		cognom: 'Pujade',
 	};
 	const obj2 = {
 		edat: 27,
-		especialitat: "JavaScript",
+		especialitat: 'JavaScript',
 	};
 	const obj3 = { ...obj1, ...obj2 };
 	console.log(obj3);
@@ -186,24 +186,31 @@ const exercici155 = (array) => {
 
 // Exercici 6
 const exercici156 = () => {
-    const array = [11, 12, 13, 14];
-    console.log(`Tots son més grans que 10: ${array.every((num) => num > 10)}`);
-    console.log(`Algun és més gran que 10: ${array.some((num) => num > 10)}`);
-}
+	const array = [11, 12, 13, 14];
+	console.log(`Tots son més grans que 10: ${array.every((num) => num > 10)}`);
+	console.log(`Algun és més gran que 10: ${array.some((num) => num > 10)}`);
+};
 
 // Exercici 1.6: Array loops
 // Exercici 1
 const exercici161 = () => {
-    const noms = ['Anna', 'Bernat', 'Clara'];
-    noms.forEach(nom => {
-        console.log(nom);
-    });
-}
+	const noms = ['Anna', 'Bernat', 'Clara'];
+	noms.forEach((nom) => {
+		console.log(nom);
+	});
+};
 
 // Exercici 2
 const exercici162 = () => {
-    const noms = ['Anna', 'Bernat', 'Clara'];
-    for (let nom of noms) {
-        console.log(nom);
-    }
-}
+	const noms = ['Anna', 'Bernat', 'Clara'];
+	for (let nom of noms) {
+		console.log(nom);
+	}
+};
+
+// Exercici 3
+const exercici163 = () => {
+	const numeros = [1, 2, 3, 4, 5, 6];
+    const parells = numeros.filter((num) => num % 2 == 0);
+    console.log(parells);
+};
