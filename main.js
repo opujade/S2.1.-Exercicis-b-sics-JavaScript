@@ -157,6 +157,13 @@ const exercici151 = () => {
 // Exercici 2
 const exercici152 = () => {
 	const array1 = [1, 2, 3, 4];
-    const array2 = array1.filter( (num) => num % 2 == 0);
-    console.log(array2);
+	const array2 = array1.filter((num) => num % 2 == 0);
+	console.log(array2);
+};
+
+// Exercici 3
+const exercici153 = () => {
+	const array1 = [1, 10, 8, 11];
+	const primerMajor = array1.find((num) => num > 10);
+	console.log(primerMajor);
 };
