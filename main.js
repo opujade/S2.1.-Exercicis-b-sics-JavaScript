@@ -218,7 +218,16 @@ const exercici163 = () => {
 // Exercici 4
 const exercici164 = () => {
 	const obj = { nom: 'Ona', edat: 25, ciutat: 'Barcelona' };
-    for (let property in obj) {
-        console.log(property + ': ' + obj[property]);
+	for (let property in obj) {
+		console.log(property + ': ' + obj[property]);
+	}
+};
+
+// Exercici 5
+const exercici165 = () => {
+	const numeros = [1, 2, 3, 4, 5, 6];
+    for (let numero of numeros) {
+        if (numero > 5) break;
+        console.log(numero);
     }
 };
