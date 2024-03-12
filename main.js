@@ -190,3 +190,12 @@ const exercici156 = () => {
     console.log(`Tots son més grans que 10: ${array.every((num) => num > 10)}`);
     console.log(`Algun és més gran que 10: ${array.some((num) => num > 10)}`);
 }
+
+// Exercici 1.6: Array loops
+// Exercici 1
+const exercici161 = () => {
+    const noms = ['Anna', 'Bernat', 'Clara'];
+    noms.forEach(nom => {
+        console.log(nom);
+    });
+}
