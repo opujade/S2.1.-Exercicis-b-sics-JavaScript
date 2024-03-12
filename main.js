@@ -183,3 +183,10 @@ const exercici155 = (array) => {
 		.map((num) => num * 2)
 		.reduce((total, num) => total + num);
 };
+
+// Exercici 6
+const exercici156 = () => {
+    const array = [11, 12, 13, 14];
+    console.log(`Tots son més grans que 10: ${array.every((num) => num > 10)}`);
+    console.log(`Algun és més gran que 10: ${array.some((num) => num > 10)}`);
+}
