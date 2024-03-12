@@ -64,3 +64,11 @@ const comprovar = (num) => `El numero és ${num}`;
 const calculadora = (num1, num2, operador) =>
 	operador(num1, num2);
 const sumar = (num1, num2) => num1 + num2;
+
+// Exercici 3
+const esperarISaludar = (name, salutacio) => {
+    setTimeout(() => {
+        salutacio(name);
+    }, 2000);
+}
+const saludar = (name) => console.log(`Hola, ${name}!`);
