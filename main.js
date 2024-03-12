@@ -122,5 +122,12 @@ const exercici143 = () => {
 const exercici144 = () => {
 	const array1 = [1, 2, 3, 4, 5];
 	let a, b, rest;
-    [a, b, ...rest] = array1;
+	[a, b, ...rest] = array1;
 };
+
+// Exercici 5
+const exercici145 = (a, b, c) => {
+	return `Element 1: ${a}, element 2: ${b}, element 3: ${c}.`
+};
+const arrayExercici145 = [1, 2, 3];
+exercici145(...arrayExercici145);
