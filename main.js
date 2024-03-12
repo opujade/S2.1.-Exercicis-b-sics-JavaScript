@@ -94,3 +94,12 @@ const exercici114 = () => {
     const array3 = [...array1, ...array2]
     return array3;
 };
+
+// Exercici 2
+const suma = (...numbers) => {
+    let result = 0;
+    numbers.forEach(number => {
+        result += number;
+    });
+    return result;
+}
