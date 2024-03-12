@@ -54,3 +54,8 @@ const parOImpar = (array) => {
 	}
 	return results;
 };
+
+// Exercici 1.3. Callbacks
+// Exercici 1
+const processar = (num, callbackFunction) => callbackFunction(num);
+const comprovar = (num) =>  `El numero és ${num}`;
