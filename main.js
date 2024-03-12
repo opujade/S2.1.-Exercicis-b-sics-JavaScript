@@ -171,6 +171,15 @@ const exercici153 = () => {
 // Exercici 4
 const exercici154 = () => {
 	const array1 = [13, 7, 8, 21];
-    const result = array1.reduce((total, num) => total + num);
-    console.log(result);
+	const result = array1.reduce((total, num) => total + num);
+	console.log(result);
+};
+
+// Exercici 5
+const arrayExercici155 = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+const exercici155 = (array) => {
+	return array
+		.filter((num) => num >= 10)
+		.map((num) => num * 2)
+		.reduce((total, num) => total + num);
 };
