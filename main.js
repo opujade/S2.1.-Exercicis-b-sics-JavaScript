@@ -35,3 +35,22 @@ const message = () => {
 // Exercici 1.2. Operador ternari
 // Exercici 1
 const potConduir = (edat) => (edat >= 18 ? "Pots conduir" : "No pots conduir");
+
+// Exercici 2
+const mesGran = (num1, num2) =>
+	num1 > num2 ? "num1 és més gran" : "num2 és més gran";
+
+// Exercici 3
+const exercici3 = (num) =>
+	num >= 0 ? (num == 0 ? "Es zero" : "Es positivo") : "Es negativo";
+
+const trobarMaxim = (a, b, c) => (a > b ? (a > c ? a : c) : b > c ? b : c);
+
+// Exercici 4
+const parOImpar = (array) => {
+	const results = [];
+	for (let i = 0; i < array.length; i++) {
+		results[i] = array[i] % 2 == 0 ? true : false;
+	}
+	return results;
+};
