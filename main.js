@@ -211,6 +211,14 @@ const exercici162 = () => {
 // Exercici 3
 const exercici163 = () => {
 	const numeros = [1, 2, 3, 4, 5, 6];
-    const parells = numeros.filter((num) => num % 2 == 0);
-    console.log(parells);
+	const parells = numeros.filter((num) => num % 2 == 0);
+	console.log(parells);
+};
+
+// Exercici 4
+const exercici164 = () => {
+	const obj = { nom: 'Ona', edat: 25, ciutat: 'Barcelona' };
+    for (let property in obj) {
+        console.log(property + ': ' + obj[property]);
+    }
 };
