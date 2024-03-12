@@ -88,7 +88,7 @@ const mostrar = (item) => console.log(item);
 
 // Exercici 1.4: Rest & Spread operators
 // Exercici 1
-const exercici114 = () => {
+const exercici141 = () => {
 	const array1 = [1, 2, 3, 4];
 	const array2 = [5, 6, 7, 8];
     const array3 = [...array1, ...array2]
@@ -102,4 +102,18 @@ const suma = (...numbers) => {
         result += number;
     });
     return result;
+}
+
+// Exercici 3
+const exercici143 = () => {
+    const obj1 = {
+        nom: 'Oriol',
+        cognom: 'Pujade',
+        edat: 27,
+        isObj1: true
+    }
+
+    const obj2 = {...obj1};
+    obj2.isObj1 = false;
+    console.log(obj1, obj2);
 }
