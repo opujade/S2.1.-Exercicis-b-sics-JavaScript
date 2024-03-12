@@ -226,8 +226,16 @@ const exercici164 = () => {
 // Exercici 5
 const exercici165 = () => {
 	const numeros = [1, 2, 3, 4, 5, 6];
-    for (let numero of numeros) {
-        if (numero > 5) break;
-        console.log(numero);
+	for (let numero of numeros) {
+		if (numero > 5) break;
+		console.log(numero);
+	}
+};
+
+// Exercici 6
+const exercici166 = () => {
+	const noms = ['Anna', 'Bernat', 'Clara'];
+    for(let nom of noms) {
+        console.log(noms.indexOf(nom) + ': ' + nom);
     }
 };
