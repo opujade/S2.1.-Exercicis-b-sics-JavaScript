@@ -58,4 +58,9 @@ const parOImpar = (array) => {
 // Exercici 1.3. Callbacks
 // Exercici 1
 const processar = (num, callbackFunction) => callbackFunction(num);
-const comprovar = (num) =>  `El numero és ${num}`;
+const comprovar = (num) => `El numero és ${num}`;
+
+// Exercici 2
+const calculadora = (num1, num2, operador) =>
+	operador(num1, num2);
+const sumar = (num1, num2) => num1 + num2;
