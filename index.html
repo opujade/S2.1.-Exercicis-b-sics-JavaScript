@@ -6,13 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Oriol Pujade Busqueta">
     <title>S2.1. Exercicis bàsics JavaScript</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="container text-center">
 
-    <h1>S2.1. Exercicis bàsics JavaScript</h1>
+    <div class="header mx-auto my-4 rounded-4 opacity-0">
+        <h1 class="text-center my-4 text-uppercase p-4">S2.1. Exercicis bàsics JavaScript</h1>
+    </div>
+    <div class="header rounded-4 bg-body fixed-top">
+        <h1 class="text-center my-4 text-uppercase p-4">S2.1. Exercicis bàsics JavaScript</h1>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.1. Arrow Functions</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons1"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.2. Operador Ternari</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons2"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.3. Callbacks</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons3"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.4. Callbacks</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons3"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.5. Callbacks</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons3"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.6. Callbacks</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons3"></div>
+            </div>
+            <div class="mb-3">
+                <h2 class="text-bg-dark rounded-3 p-2">1.7. Callbacks</h2>
+                <div class="d-flex gap-2 justify-content-around my-3" id="buttons3"></div>
+            </div>
+        </div>
 
-    <script src="js/main.js"></script>
+        <div class="col-6 start-50 position-fixed">
+            <h2 class="text-bg-dark rounded-3 p-2">Resultats</h2>
+            <h3 class="p-2 text-center rounded-2 text-bg-secondary">Enunciat</h3>
+            <div class="my-2 text-start" id="enunciat">Escull un exercici</div>
+            <h3 class="p-2 text-center rounded-2 text-bg-success">Codi</h3>
+            <div class="m-3 font-monospace fs-6 text-start" id="code"></div>
+            <div class="my-2 fs-6" id="result"></div>
+        </div>
+    </div>
+
+
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
