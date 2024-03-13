@@ -242,32 +242,91 @@ const exercici166 = () => {
 
 // Exercici 1.7: Promises & Async/Await
 // Exercici 1 i Exercici 2
-let promise1 = new Promise((resolve) => {
-	setTimeout(() => {
-		resolve('Hola, món');
-	}, 2000);
-})
-promise1.then((salutacio) => console.log(salutacio));
+const exercici171 = () => {
+	let promise1 = new Promise((resolve) => {
+		setTimeout(() => {
+			resolve('Hola, món');
+		}, 2000);
+	});
 
+	promise1.then((salutacio) => console.log(salutacio));
+};
 
 // Exercici 3
-let promise2 = new Promise((resolve, reject) => {
-	let input = 'Hola'
-	setTimeout(() => {
-		if (input === 'Hola') {
-			resolve('Resolt');
-		} else {
-			reject(new Error('No resolt'));
-		}
-	}, 2000);
-})
-promise2.then(
-	(value) => console.log(value),
-	(error) => console.log(error),
-);
+const exercici173 = () => {
+	let promise2 = new Promise((resolve, reject) => {
+		let input = 'Hola';
+		setTimeout(() => {
+			if (input === 'Hola') {
+				resolve('Resolt');
+			} else {
+				reject(new Error('No resolt'));
+			}
+		}, 2000);
+	});
+
+	promise2.then(
+		(value) => console.log(value),
+		(error) => console.log(error)
+	);
+};
 
 // Exercici 4
-async function myFunction() {
-	console.log(await promise1);
-}
-myFunction();
+const exercici174 = () => {
+	let promise1 = new Promise((resolve) => {
+		setTimeout(() => {
+			resolve('Hola, món');
+		}, 2000);
+	});
+
+	async function myFunction() {
+		console.log(await promise1);
+	}
+	myFunction();
+};
+
+// Exercici 5
+const exercici175 = () => {
+	let promise1 = new Promise((resolve) => {
+		setTimeout(() => {
+			resolve('Hola, món');
+		}, 2000);
+	});
+
+	async function myFunction() {
+		try {
+			console.log(await promise1);
+		} catch (error) {
+			console.log(error);
+		}
+	}
+	myFunction();
+};
+
+// Exericci 6
+const exercici176 = () => {
+	const promise2Sec = new Promise((resolve, reject) => {
+        const input = 'Hola';
+        if (input === 'Hola'){
+            setTimeout(() => {
+                resolve('Han passat 2 segons.');
+            }, 2000);
+        } else {
+            reject(new Error('Error al primer promise.'));
+        }
+	});
+	const promise3Sec = new Promise((resolve, reject) => {
+        const input = 'Adéu';
+        if (input === 'Adéu'){
+            setTimeout(() => {
+                resolve('Han passat 3 segons.');
+            }, 3000);
+        } else {
+            reject(new Error('Error al segon promise.'));
+        }
+	});
+
+    Promise.all([promise2Sec, promise3Sec]).then((results) => {
+        console.log(results);
+    })
+};
